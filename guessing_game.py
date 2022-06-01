@@ -7,9 +7,9 @@ class GuessingGame():
     def guess(self, user_guess):
         self.user_guess = user_guess
         if user_guess > self.answer:
-            print("too high")
+            print("high")
         elif user_guess < self.answer:
-            print("too low")
+            print("low")
         elif user_guess == self.answer:
             self.is_solved = True
             print("correct")
